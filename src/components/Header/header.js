@@ -9,11 +9,13 @@ export const Header = ({setDisplayedArray}) => {
   }
   return (
     <div className="header-container">
+    <Link to="/" style={{textDecoration:'none'}}>
       <img
         src="/images/chatgpt-logo.png"
         className="logo-img"
         alt="rice&oil"
       />
+          </Link>
 
       <div className="header-icons">
         <Link to="/cart" style={{textDecoration:"none"}} onClick={onClickCart}>
